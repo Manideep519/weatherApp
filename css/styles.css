@@ -1,0 +1,185 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+section {
+  opacity: 1;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  padding: 30px;
+  background: #2980B9;
+  background: -webkit-gradient(linear, left bottom, left top, from(#FFFFFF), color-stop(#6DD5FA), to(#2980B9));
+  background: linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9);
+}
+
+.app__search {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 100px;
+}
+
+.app__search .form input[type=text] {
+  padding: 12px;
+  font-family: inherit;
+  font-size: 14px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  -webkit-transition: .3s border-color;
+  transition: .3s border-color;
+  outline: none;
+  width: 240px;
+}
+
+.app__search .form input[type=text]:hover {
+  border: 1px solid #aaa;
+}
+
+.app__search .form input[type=submit] {
+  padding: 12px;
+  font-family: inherit;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  -webkit-transition: .3s border-color;
+  transition: .3s border-color;
+  cursor: pointer;
+  outline: none;
+}
+
+.app__report {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 320px;
+  min-height: 450px;
+  padding: 20px 40px;
+  border-radius: 20px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+          box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.app__report__day {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app__report__day__time {
+  font-size: 40px;
+}
+
+.app__report__day__time span {
+  font-size: 14px;
+}
+
+.app__report__day__date {
+  font-size: 13px;
+}
+
+.app__report__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app__report__details__place {
+  font-size: 16px;
+}
+
+.app__report__details__temp {
+  font-size: 90px;
+  position: relative;
+}
+
+.app__report__details__temp sup {
+  font-size: 22px;
+  position: absolute;
+  top: 10px;
+}
+
+.app__report__details__temp span {
+  display: block;
+  font-size: 16px;
+  text-align: center;
+}
+
+.app__report__details__aqi {
+  padding: 6px 10px;
+  border-radius: 20px;
+  background-color: #bdc3c7;
+}
+/*# sourceMappingURL=styles.css.map */

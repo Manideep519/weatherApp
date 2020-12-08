@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Weather App</title>
+
+</head>
+
+<body>
+
+    <main class="app">
+        <div class="app__search">
+            <h1 class="text-center">weather app</h1>
+
+            <form autocomplete="off" class="form" method="GET">
+                <input id="input" type="text" placeholder="Search a city" autocomplete="false" autofocus>
+                <input type="submit" onclick="showWeatherCard()" value="Submit">
+            </form>
+        </div>
+
+        <section class="show hide">
+            <div class="app__report">
+                <div class="app__report__day">
+                    <div>
+                        <p class="app__report__day__time"><span></span></p>
+                        <p class="app__report__day__date"></p>
+                    </div>
+                    <div>
+                        <img class="app__report__day__img" src="" alt="">
+                    </div>
+                </div>
+                <div class="app__report__details">
+                    <p class="app__report__details__place"></p>
+                    <p class="app__report__details__temp">
+                    </p>
+
+
+                    <!-- <p class="app__report__details__aqi">AQI 48</p> -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+<script src="app.js"></script>
+
+</html>
