@@ -117,7 +117,7 @@ async function getWeatherReport(inputCity) {
 
 async function getTimeOfInputPlace() {
     let apiKey = '12M6FF3K2XG2'
-    let url = `http://api.timezonedb.com/v2.1/get-time-zone?key=${apiKey}&format=json&by=position&lat=${weatherData.coord.lat}&lng=${weatherData.coord.lon}`
+    let url = `https://api.timezonedb.com/v2.1/get-time-zone?key=${apiKey}&format=json&by=position&lat=${weatherData.coord.lat}&lng=${weatherData.coord.lon}`
 
     try {
         const res = await fetch(url);
