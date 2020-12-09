@@ -88,7 +88,7 @@ function updateTime() {
 
     document.querySelector(".app__report__day__time").innerHTML = resultTime;
     document.querySelector(".app__report__day__date").innerHTML = resultDate;
-    document.querySelector(".app__report__day__img").src = `http://openweathermap.org/img/wn/${weatherData.weather[0]["icon"]}@2x.png`
+    document.querySelector(".app__report__day__img").src = `https://openweathermap.org/img/wn/${weatherData.weather[0]["icon"]}@2x.png`
 
 
 }
