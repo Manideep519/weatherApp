@@ -74,12 +74,19 @@ function updateTime() {
     }
 
 
+
+
     let days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
     let months = ["", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
-    let resultDay = dayofweek(day, month, fullYear)
 
-    resultDate = `${days[Math.ceil(resultDay)]}, ${day} ,${months[month]}`;
+    let resultDay = dayofweek(day, month, fullYear)
+    console.log(resultDay)
+
+    let m = new Date();
+    resultDay = m.getDay()
+
+    resultDate = `${days[resultDay]}, ${day} ,${months[month]}`;
 
     // console.log(resultTime, resultDate)
 
